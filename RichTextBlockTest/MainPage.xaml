@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="RichTextBlockTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:RichTextBlockTest"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <StackPanel>
+        <RichTextBlock MaxLines="4">
+            <RichTextBlock.Blocks>
+                <Paragraph>
+                    <InlineUIContainer>
+                        <HyperlinkButton>hyper link button in rich text block</HyperlinkButton>
+                    </InlineUIContainer>
+                </Paragraph>
+                <Paragraph>
+                    <Run>This is a test text in rich text block.</Run>
+                    <LineBreak />
+                    <Run>This is a test text in rich text block.</Run>
+                    <LineBreak />
+                    <Run>This is a test text in rich text block.</Run>
+                    <LineBreak />
+                    <Run>This is a test text in rich text block.</Run>
+                    <LineBreak />
+                </Paragraph>
+                <Paragraph>
+                    <InlineUIContainer>
+                        <HyperlinkButton>another hyper link button in rich text block</HyperlinkButton>
+                    </InlineUIContainer>
+                </Paragraph>
+            </RichTextBlock.Blocks>
+        </RichTextBlock>
+        <HyperlinkButton>hyper link button</HyperlinkButton>
+    </StackPanel>
+</Page>
